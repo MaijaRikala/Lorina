@@ -12,8 +12,9 @@ public class GameManager : MonoBehaviour
 
     [Header("UI Panels")]
     public GameObject pausePanel;
-    public GameObject optionsPanel;
+    public GameObject settingsPanel;
     public GameObject mainMenuPanel;
+    public GameObject cutscenePanel;
     public GameObject cauldronPanel;
     public GameObject greenhousePanel;
     public GameObject spiceCabinetPanel;
@@ -74,6 +75,7 @@ public class GameManager : MonoBehaviour
             pausePanel.SetActive(true);
     }
 
+
     // --- Resume the game ---
     public void ResumeGame()
     {
@@ -84,26 +86,41 @@ public class GameManager : MonoBehaviour
     }
 
 
-    // --- Open Options panel ---
-    public void OpenOptions()
+    // Main menu functions -----------------------------------------------
+
+
+    // --- Open cutscene panel ---
+    public void OpenCutscene()
+    {
+        if (cutscenePanel != null)
+            cutscenePanel.SetActive(true);
+        // No need to close this, since the next step is to load main game scene
+    }
+
+
+    // --- Open Settings panel ---
+    public void OpenSettings()
     {
         if (mainMenuPanel != null)
             mainMenuPanel.SetActive(false);
 
-        if (optionsPanel != null)
-            optionsPanel.SetActive(true);
+        if (settingsPanel != null)
+            settingsPanel.SetActive(true);
     }
 
 
-    // --- Close Options panel ---
-    public void CloseOptions()
+    // --- Close Settings panel ---
+    public void CloseSettings()
     {
-        if (optionsPanel != null)
-            optionsPanel.SetActive(false);
+        if (settingsPanel != null)
+            settingsPanel.SetActive(false);
 
         if (mainMenuPanel != null)
             mainMenuPanel.SetActive(true);
     }
+
+
+    // Main game functions ----------------------------------------------
 
 
     // --- Go back to Main Menu ---
@@ -115,14 +132,14 @@ public class GameManager : MonoBehaviour
 
 
     // --- Open cauldron panel ---
-    public void OpenCauldronPanel ()
+    public void OpenCauldronPanel()
     {
         if (cauldronPanel != null)
             cauldronPanel.SetActive(true);
     }
 
     // --- Close cauldron panel ---
-    public void CloseCauldronPanel ()
+    public void CloseCauldronPanel()
     {
         if (cauldronPanel != null)
             cauldronPanel.SetActive(false);
