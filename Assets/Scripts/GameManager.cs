@@ -114,11 +114,18 @@ public class GameManager : MonoBehaviour
     }
 
 
-    // --- Open kitchen panel ---
+    // --- Open cauldron panel ---
     public void OpenCauldronPanel ()
     {
         if (cauldronPanel != null)
             cauldronPanel.SetActive(true);
+    }
+
+    // --- Close cauldron panel ---
+    public void CloseCauldronPanel ()
+    {
+        if (cauldronPanel != null)
+            cauldronPanel.SetActive(false);
     }
 
 
