@@ -146,6 +146,51 @@ public class GameManager : MonoBehaviour
     }
 
 
+    // --- Open greenhouse panel ---
+    public void OpenGreenhousePanel()
+    {
+        if (greenhousePanel != null)
+            greenhousePanel.SetActive(true);
+    }
+
+    // --- Close greenhouse panel ---
+    public void CloseGreenhousePanel()
+    {
+        if (greenhousePanel != null)
+            greenhousePanel.SetActive(false);
+    }
+
+
+    // --- Open cellar panel ---
+    public void OpenCellarPanel()
+    {
+        if (cellarPanel != null)
+            cellarPanel.SetActive(true);
+    }
+
+    // --- Close cellar panel ---
+    public void CloseCellarPanel()
+    {
+        if (cellarPanel != null)
+            cellarPanel.SetActive(false);
+    }
+
+
+    // --- Open spice cabinet panel ---
+    public void OpenSpiceCabinetPanel()
+    {
+        if (spiceCabinetPanel != null)
+            spiceCabinetPanel.SetActive(true);
+    }
+
+    // --- Close spice cabinet panel ---
+    public void CloseSpiceCabinetPanel()
+    {
+        if (spiceCabinetPanel != null)
+            spiceCabinetPanel.SetActive(false);
+    }
+
+
     // --- Quit game ---
 
     public void QuitGame()
