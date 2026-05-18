@@ -1085,7 +1085,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1095,10 +1095,10 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: -3762161872592127581, guid: 9f73a35f9d64a92448a9f25506b7732d, type: 3}
+    m_PressedSprite: {fileID: -2635632256153702888, guid: fa0fac895a79903469797ab3db4b1fe5, type: 3}
+    m_SelectedSprite: {fileID: -2635632256153702888, guid: fa0fac895a79903469797ab3db4b1fe5, type: 3}
+    m_DisabledSprite: {fileID: 8206323105342337687, guid: 9177af0a231fb624aa330a5c06cba7f1, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -1317,7 +1317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47c12894c8f89e84292a064024dd6d62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AutoReselecter
-  eventSystem: {fileID: 0}
+  eventSystem: {fileID: 639915391}
 --- !u!1 &1161213637
 GameObject:
   m_ObjectHideFlags: 0
