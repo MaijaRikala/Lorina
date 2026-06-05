@@ -24,8 +24,7 @@ public class GameManager : MonoBehaviour
 
     // Initialize ----------------------------------------------------
 
-    // Initialize variables, in this case only _instance
-    // Set _instance reference as soon as possible
+    // Initialize variables
     private void Awake()
     {
         if (Instance != null)
