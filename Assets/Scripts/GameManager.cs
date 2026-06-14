@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     public GameObject greenhousePanel;
     public GameObject spiceCabinetPanel;
     public GameObject cellarPanel;
+    public GameObject stirPanel;
+    public GameObject heatingPanel;
 
 
 
@@ -187,6 +189,36 @@ public class GameManager : MonoBehaviour
     {
         if (spiceCabinetPanel != null)
             spiceCabinetPanel.SetActive(false);
+    }
+
+
+    // --- Open stir options panel ---
+    public void OpenStirPanel()
+    {
+        if (stirPanel != null)
+            stirPanel.SetActive(true);
+    }
+
+    // --- Close stir options panel ---
+    public void CloseStirPanel()
+    {
+        if (stirPanel != null)
+            stirPanel.SetActive(false);
+    }
+
+
+    // --- Open heating options panel ---
+    public void OpenHeatingPanel()
+    {
+        if (heatingPanel != null)
+            heatingPanel.SetActive(true);
+    }
+
+    // --- Close hating options panel ---
+    public void CloseHeatingPanel()
+    {
+        if (heatingPanel != null)
+            heatingPanel.SetActive(false);
     }
 
 
