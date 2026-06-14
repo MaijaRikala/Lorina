@@ -12,19 +12,21 @@ public class GameManager : MonoBehaviour
 
     [Header("UI Panels")]
     public GameObject pausePanel;
-    public GameObject optionsPanel;
+    public GameObject settingsPanel;
     public GameObject mainMenuPanel;
+    public GameObject cutscenePanel;
     public GameObject cauldronPanel;
     public GameObject greenhousePanel;
     public GameObject spiceCabinetPanel;
     public GameObject cellarPanel;
+    public GameObject stirPanel;
+    public GameObject heatingPanel;
 
 
 
     // Initialize ----------------------------------------------------
 
-    // Initialize variables, in this case only _instance
-    // Set _instance reference as soon as possible
+    // Initialize variables
     private void Awake()
     {
         if (Instance != null)
@@ -74,6 +76,7 @@ public class GameManager : MonoBehaviour
             pausePanel.SetActive(true);
     }
 
+
     // --- Resume the game ---
     public void ResumeGame()
     {
@@ -84,26 +87,41 @@ public class GameManager : MonoBehaviour
     }
 
 
-    // --- Open Options panel ---
-    public void OpenOptions()
+    // Main menu functions -----------------------------------------------
+
+
+    // --- Open cutscene panel ---
+    public void OpenCutscene()
+    {
+        if (cutscenePanel != null)
+            cutscenePanel.SetActive(true);
+        // No need to close this, since the next step is to load main game scene
+    }
+
+
+    // --- Open Settings panel ---
+    public void OpenSettings()
     {
         if (mainMenuPanel != null)
             mainMenuPanel.SetActive(false);
 
-        if (optionsPanel != null)
-            optionsPanel.SetActive(true);
+        if (settingsPanel != null)
+            settingsPanel.SetActive(true);
     }
 
 
-    // --- Close Options panel ---
-    public void CloseOptions()
+    // --- Close Settings panel ---
+    public void CloseSettings()
     {
-        if (optionsPanel != null)
-            optionsPanel.SetActive(false);
+        if (settingsPanel != null)
+            settingsPanel.SetActive(false);
 
         if (mainMenuPanel != null)
             mainMenuPanel.SetActive(true);
     }
+
+
+    // Main game functions ----------------------------------------------
 
 
     // --- Go back to Main Menu ---
@@ -114,11 +132,93 @@ public class GameManager : MonoBehaviour
     }
 
 
-    // --- Open kitchen panel ---
-    public void OpenCauldronPanel ()
+    // --- Open cauldron panel ---
+    public void OpenCauldronPanel()
     {
         if (cauldronPanel != null)
             cauldronPanel.SetActive(true);
+    }
+
+    // --- Close cauldron panel ---
+    public void CloseCauldronPanel()
+    {
+        if (cauldronPanel != null)
+            cauldronPanel.SetActive(false);
+    }
+
+
+    // --- Open greenhouse panel ---
+    public void OpenGreenhousePanel()
+    {
+        if (greenhousePanel != null)
+            greenhousePanel.SetActive(true);
+    }
+
+    // --- Close greenhouse panel ---
+    public void CloseGreenhousePanel()
+    {
+        if (greenhousePanel != null)
+            greenhousePanel.SetActive(false);
+    }
+
+
+    // --- Open cellar panel ---
+    public void OpenCellarPanel()
+    {
+        if (cellarPanel != null)
+            cellarPanel.SetActive(true);
+    }
+
+    // --- Close cellar panel ---
+    public void CloseCellarPanel()
+    {
+        if (cellarPanel != null)
+            cellarPanel.SetActive(false);
+    }
+
+
+    // --- Open spice cabinet panel ---
+    public void OpenSpiceCabinetPanel()
+    {
+        if (spiceCabinetPanel != null)
+            spiceCabinetPanel.SetActive(true);
+    }
+
+    // --- Close spice cabinet panel ---
+    public void CloseSpiceCabinetPanel()
+    {
+        if (spiceCabinetPanel != null)
+            spiceCabinetPanel.SetActive(false);
+    }
+
+
+    // --- Open stir options panel ---
+    public void OpenStirPanel()
+    {
+        if (stirPanel != null)
+            stirPanel.SetActive(true);
+    }
+
+    // --- Close stir options panel ---
+    public void CloseStirPanel()
+    {
+        if (stirPanel != null)
+            stirPanel.SetActive(false);
+    }
+
+
+    // --- Open heating options panel ---
+    public void OpenHeatingPanel()
+    {
+        if (heatingPanel != null)
+            heatingPanel.SetActive(true);
+    }
+
+    // --- Close hating options panel ---
+    public void CloseHeatingPanel()
+    {
+        if (heatingPanel != null)
+            heatingPanel.SetActive(false);
     }
 
 
