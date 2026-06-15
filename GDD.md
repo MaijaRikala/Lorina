@@ -1,7 +1,7 @@
 # Game Design Document
 
 ## Concept
-Humorous potion making, set in a remote cabin amidst a global pandemic.
+Humorous potion making game, set in a remote cabin amidst a global pandemic.
 
 ## Objective
 The goal of the game is for the player to make a cure for the illness LIVID19 that is the current pandemic. The player can make the cure (potion) by mixing the correct ingredients, stirring them in the right way and heating the concoction to the correct temperature.
@@ -20,7 +20,7 @@ Windows: widely used, accessible to developers
 ## Visual style
 - stylized 2D graphics, first person
 - no avatar for the player
-- pastel color scheme for main views
+- not so vry pastel color scheme for main views
 - endings may have darker tones
 - text with clear contrast and colour blind palettes
 - pop-up UI for description texts and player decisions (what to do, where to move, which ingredient to choose, how to stir, how to heat/cool)
@@ -31,6 +31,7 @@ Windows: widely used, accessible to developers
 - more dramatic/dark themes for endings, not necessarily all unique
 - endings can also have sound effects (such as crystallization)
 - sound effects for opening chest, adding ingredients, mixing, heating/cooling (different sounds for different methods?)
+- possible remixes?
 
 ## Target audience
 - casual players
