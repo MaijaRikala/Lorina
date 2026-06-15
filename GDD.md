@@ -20,7 +20,7 @@ Windows: widely used, accessible to developers
 ## Visual style
 - stylized 2D graphics, first person
 - no avatar for the player
-- pastel color scheme for main views
+- not so vry pastel color scheme for main views
 - endings may have darker tones
 - text with clear contrast and colour blind palettes
 - pop-up UI for description texts and player decisions (what to do, where to move, which ingredient to choose, how to stir, how to heat/cool)
