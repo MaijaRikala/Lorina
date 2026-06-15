@@ -1,7 +1,7 @@
 # Game Design Document
 
 ## Concept
-Humorous potion making game, set in a remote cabin amidst a global pandemic.
+Humorous potion making, set in a remote cabin amidst a global pandemic.
 
 ## Objective
 The goal of the game is for the player to make a cure for the illness LIVID19 that is the current pandemic. The player can make the cure (potion) by mixing the correct ingredients, stirring them in the right way and heating the concoction to the correct temperature.
