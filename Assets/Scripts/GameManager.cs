@@ -214,7 +214,7 @@ public class GameManager : MonoBehaviour
             heatingPanel.SetActive(true);
     }
 
-    // --- Close hating options panel ---
+    // --- Close heating options panel ---
     public void CloseHeatingPanel()
     {
         if (heatingPanel != null)
