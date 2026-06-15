@@ -31,6 +31,7 @@ Windows: widely used, accessible to developers
 - more dramatic/dark themes for endings, not necessarily all unique
 - endings can also have sound effects (such as crystallization)
 - sound effects for opening chest, adding ingredients, mixing, heating/cooling (different sounds for different methods?)
+- possible remixes?
 
 ## Target audience
 - casual players
